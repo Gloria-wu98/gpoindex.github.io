@@ -1,625 +1,445 @@
-{\rtf1\ansi\ansicpg950\cocoartf2822
-\cocoatextscaling0\cocoaplatform0{\fonttbl\f0\fnil\fcharset0 Menlo-Regular;\f1\fnil\fcharset136 PingFangTC-Regular;\f2\fnil\fcharset0 AppleColorEmoji;
-}
-{\colortbl;\red255\green255\blue255;\red70\green137\blue204;\red23\green24\blue24;\red140\green211\blue254;
-\red202\green202\blue202;\red109\green109\blue109;\red194\green126\blue101;\red109\green115\blue120;\red212\green212\blue212;
-\red113\green192\blue131;\red167\green197\blue152;\red183\green111\blue247;\red246\green124\blue48;\red54\green192\blue160;
-}
-{\*\expandedcolortbl;;\cssrgb\c33725\c61176\c83922;\cssrgb\c11765\c12157\c12549;\cssrgb\c61176\c86275\c99608;
-\cssrgb\c83137\c83137\c83137;\cssrgb\c50196\c50196\c50196;\cssrgb\c80784\c56863\c47059;\cssrgb\c50196\c52549\c54510;\cssrgb\c86275\c86275\c86275;
-\cssrgb\c50588\c78824\c58431;\cssrgb\c70980\c80784\c65882;\cssrgb\c77255\c54118\c97647;\cssrgb\c98039\c56471\c24314;\cssrgb\c23922\c78824\c69020;
-}
-\paperw11900\paperh16840\margl1440\margr1440\vieww12720\viewh7240\viewkind0
-\deftab720
-\pard\pardeftab720\partightenfactor0
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gloria的海報生成器</title>
 
-\f0\fs28 \cf2 \cb3 \expnd0\expndtw0\kerning0
-<!DOCTYPE\cf4  html\cf2 >\cf5 \cb1 \
-\pard\pardeftab720\partightenfactor0
-\cf6 \cb3 <\cf2 html\cf5  \cf4 lang\cf6 =\cf7 "zh-Hant"\cf6 >\cf5 \cb1 \
-\cf6 \cb3 <\cf2 head\cf6 >\cf5 \cb1 \
-\cb3     \cf6 <\cf2 meta\cf5  \cf4 charset\cf6 =\cf7 "UTF-8"\cf6 >\cf5 \cb1 \
-\cb3     \cf6 <\cf2 meta\cf5  \cf4 name\cf6 =\cf7 "viewport"\cf5  \cf4 content\cf6 =\cf7 "width=device-width, initial-scale=1.0"\cf6 >\cf5 \cb1 \
-\cb3     \cf6 <\cf2 title\cf6 >\cf5 Gloria
-\f1 \'aa\'ba\'ae\'fc\'b3\'f8\'a5\'cd\'a6\'a8\'be\'b9
-\f0 \cf6 </\cf2 title\cf6 >\cf5 \cb1 \
-\
-\cb3     \cf8 <!-- 
-\f2 \uc0\u11088 
-\f0  Favicon 
-\f1 \'ad\'d7\'a5\'bf
-\f0  
-\f2 \uc0\u11088 
-\f0  -->\cf5 \cb1 \
-\cb3     \cf8 <!-- 
-\f1 \'bd\'d0\'a7\'52\'b0\'a3\'a9\'d2\'a6\'b3\'c2\'c2\'aa\'ba
-\f0  favicon link 
-\f1 \'bc\'d0\'c5\'d2\'a1\'41\'a8\'c3\'a8\'cf\'a5\'ce\'a4\'55\'ad\'b1\'b3\'6f\'a4\'40\'a6\'e6
-\f0  -->\cf5 \cb1 \
-\cb3     \cf8 <!-- 
-\f1 \'b1\'7a\'bb\'dd\'ad\'6e\'a5\'fd\'b1\'4e\'b1\'7a\'aa\'ba\'b9\'cf\'c0\'c9\'c2\'e0\'ac\'b0
-\f0  Base64 
-\f1 \'a6\'72\'a6\'ea\'a1\'41\'b5\'4d\'ab\'e1\'b6\'4b\'a8\'ec
-\f0  href 
-\f1 \'a4\'de\'b8\'b9\'a4\'a4\'aa\'ba\'ab\'fc\'a9\'77\'a6\'ec\'b8\'6d
-\f0  -->\cf5 \cb1 \
-\cb3     \cf6 <\cf2 link\cf5  \cf4 rel\cf6 =\cf7 "icon"\cf5  \cf4 href\cf6 =\cf7 "data:image/png;base64,
-\f1 \'a6\'62\'b3\'6f\'b8\'cc\'b6\'4b\'a4\'57\'b1\'7a\'bd\'c6\'bb\'73\'aa\'ba
-\f0 Base64
-\f1 \'a4\'e5\'a6\'72
-\f0 "\cf6 >\cf5 \cb1 \
-\
-\cb3     \cf8 <!-- 
-\f1 \'a4\'de\'a4\'4a
-\f0  Tailwind CSS 
-\f1 \'a9\'4d
-\f0  Google Fonts -->\cf5 \cb1 \
-\cb3     \cf6 <\cf2 script\cf5  \cf4 src\cf6 =\cf7 "https://cdn.tailwindcss.com"\cf6 ></\cf2 script\cf6 >\cf5 \cb1 \
-\cb3     \cf6 <\cf2 link\cf5  \cf4 rel\cf6 =\cf7 "preconnect"\cf5  \cf4 href\cf6 =\cf7 "https://fonts.googleapis.com"\cf6 >\cf5 \cb1 \
-\cb3     \cf6 <\cf2 link\cf5  \cf4 rel\cf6 =\cf7 "preconnect"\cf5  \cf4 href\cf6 =\cf7 "https://fonts.gstatic.com"\cf5  \cf4 crossorigin\cf6 >\cf5 \cb1 \
-\cb3     \cf6 <\cf2 link\cf5  \cf4 href\cf6 =\cf7 "https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Sans+TC:wght@400;700&family=Nunito+Sans:wght@400;700&display=swap"\cf5  \cf4 rel\cf6 =\cf7 "stylesheet"\cf6 >\cf5 \cb1 \
-\cb3     \cf6 <\cf2 style\cf6 >\cf5 \cb1 \
-\cb3         \cf8 /* 
-\f1 \'be\'e3\'c5\'e9\'ad\'b6\'ad\'b1\'ad\'49\'b4\'ba\'bb\'50\'a6\'72\'c5\'e9\'b3\'5d\'a9\'77
-\f0  */\cf5 \cb1 \
-\cb3         \cf2 body\cf5  \cf9 \{\cf5 \cb1 \
-\cb3             \cf4 font-family:\cf5  \cf10 'Inter'\cf9 ,\cf5  \cf10 'Noto Sans TC'\cf9 ,\cf5  \cf7 sans-serif\cf9 ;\cf5 \cb1 \
-\cb3             \cf4 background:\cf5  \cf7 linear-gradient(\cf11 135deg\cf9 ,\cf5  #fddde6 \cf11 0%\cf9 ,\cf5  #d4eaf7 \cf11 100%\cf7 )\cf9 ;\cf5 \cb1 \
-\cb3             \cf4 display:\cf5  \cf7 flex\cf9 ;\cf5 \cb1 \
-\cb3             \cf4 flex-direction:\cf5  \cf7 column\cf9 ;\cf5 \cb1 \
-\cb3             \cf4 justify-content:\cf5  \cf7 flex-start\cf9 ;\cf5 \cb1 \
-\cb3             \cf4 align-items:\cf5  \cf7 center\cf9 ;\cf5 \cb1 \
-\cb3             \cf4 min-height:\cf5  \cf11 100vh\cf9 ;\cf5 \cb1 \
-\cb3             \cf4 margin:\cf5  \cf11 0\cf9 ;\cf5 \cb1 \
-\cb3             \cf4 padding:\cf5  \cf11 2rem\cf5  \cf11 1rem\cf9 ;\cf5 \cb1 \
-\cb3             \cf4 box-sizing:\cf5  \cf7 border-box\cf9 ;\cf5 \cb1 \
-\cb3         \cf9 \}\cf5 \cb1 \
-\
-\cb3         \cf8 /* 
-\f1 \'a5\'cd\'a6\'a8\'be\'b9\'a5\'44\'ae\'65\'be\'b9
-\f0  */\cf5 \cb1 \
-\cb3         \cf2 .generator-container\cf5  \cf9 \{\cf5 \cb1 \
-\cb3             \cf4 background-color:\cf5  \cf7 rgba(\cf11 255\cf9 ,\cf5  \cf11 255\cf9 ,\cf5  \cf11 255\cf9 ,\cf5  \cf11 0.9\cf7 )\cf9 ;\cf5 \cb1 \
-\cb3             \cf4 padding:\cf5  \cf11 2rem\cf9 ;\cf5 \cb1 \
-\cb3             \cf4 border-radius:\cf5  \cf11 20px\cf9 ;\cf5 \cb1 \
-\cb3             \cf4 box-shadow:\cf5  \cf11 0\cf5  \cf11 15px\cf5  \cf11 30px\cf5  \cf7 rgba(\cf11 0\cf9 ,\cf5  \cf11 0\cf9 ,\cf5  \cf11 0\cf9 ,\cf5  \cf11 0.15\cf7 )\cf9 ;\cf5 \cb1 \
-\cb3             \cf4 margin-bottom:\cf5  \cf11 2rem\cf9 ;\cf5 \cb1 \
-\cb3             \cf4 width:\cf5  \cf11 100%\cf9 ;\cf5 \cb1 \
-\cb3             \cf4 max-width:\cf5  \cf11 600px\cf9 ;\cf5 \cb1 \
-\cb3             \cf4 backdrop-filter:\cf5  \cf7 blur(\cf11 10px\cf7 )\cf9 ;\cf5 \cb1 \
-\cb3             \cf4 border:\cf5  \cf11 1px\cf5  \cf7 solid\cf5  \cf7 rgba(\cf11 255\cf9 ,\cf5  \cf11 255\cf9 ,\cf5  \cf11 255\cf9 ,\cf5  \cf11 0.2\cf7 )\cf9 ;\cf5 \cb1 \
-\cb3         \cf9 \}\cf5 \cb1 \
-\cb3         \cb1 \
-\cb3         \cf8 /* 
-\f1 \'bc\'d0\'c3\'44\'bc\'cb\'a6\'a1
-\f0  (
-\f1 \'a4\'77\'a7\'f3\'b7\'73
-\f0 ) */\cf5 \cb1 \
-\cb3         \cf2 .generator-title\cf5  \cf9 \{\cf5 \cb1 \
-\cb3             \cf4 font-size:\cf5  \cf11 2.8rem\cf9 ;\cf5 \cb1 \
-\cb3             \cf4 font-weight:\cf5  \cf11 700\cf9 ;\cf5 \cb1 \
-\cb3             \cf4 color:\cf5  #5e35b1\cf9 ;\cf5  \cf8 /* 
-\f1 \'b2\'60\'b5\'b5\'a6\'e2
-\f0  */\cf5 \cb1 \
-\cb3             \cf4 text-align:\cf5  \cf7 center\cf9 ;\cf5 \cb1 \
-\cb3             \cf4 text-shadow:\cf5  \cf11 1px\cf5  \cf11 1px\cf5  \cf11 2px\cf5  \cf7 rgba(\cf11 0\cf9 ,\cf5  \cf11 0\cf9 ,\cf5  \cf11 0\cf9 ,\cf5  \cf11 0.1\cf7 )\cf9 ;\cf5 \cb1 \
-\cb3             \cf4 background-color:\cf5  #f3e5f5\cf9 ;\cf5  \cf8 /* 
-\f1 \'b2\'4c\'b5\'b5\'a6\'e2\'ad\'49\'b4\'ba
-\f0  */\cf5 \cb1 \
-\cb3             \cf4 padding:\cf5  \cf11 0.75rem\cf5  \cf11 2rem\cf9 ;\cf5 \cb1 \
-\cb3             \cf4 border-radius:\cf5  \cf11 20px\cf9 ;\cf5 \cb1 \
-\cb3             \cf4 box-shadow:\cf5  \cf11 0\cf5  \cf11 5px\cf5  \cf11 15px\cf5  \cf7 rgba(\cf11 0\cf9 ,\cf5  \cf11 0\cf9 ,\cf5  \cf11 0\cf9 ,\cf5  \cf11 0.1\cf7 )\cf9 ;\cf5 \cb1 \
-\cb3             \cf4 display:\cf5  \cf7 inline-block\cf9 ;\cf5  \cf8 /* 
-\f1 \'c5\'fd\'ad\'49\'b4\'ba\'a5\'5d\'bb\'71\'a4\'e5\'a6\'72
-\f0  */\cf5 \cb1 \
-\cb3             \cf4 border:\cf5  \cf11 1px\cf5  \cf7 solid\cf5  \cf7 rgba(\cf11 94\cf9 ,\cf5  \cf11 53\cf9 ,\cf5  \cf11 177\cf9 ,\cf5  \cf11 0.1\cf7 )\cf9 ;\cf5 \cb1 \
-\cb3         \cf9 \}\cf5 \cb1 \
-\
-\cb3         \cf8 /* 
-\f1 \'bf\'e9\'a4\'4a\'b0\'cf\'b6\'f4\'a5\'64\'a4\'f9
-\f0  */\cf5 \cb1 \
-\cb3         \cf2 .input-card\cf5  \cf9 \{\cf5 \cb1 \
-\cb3             \cf4 background-color:\cf5  \cf7 rgba(\cf11 255\cf9 ,\cf5  \cf11 255\cf9 ,\cf5  \cf11 255\cf9 ,\cf5  \cf11 0.8\cf7 )\cf9 ;\cf5 \cb1 \
-\cb3             \cf4 padding:\cf5  \cf11 1.5rem\cf9 ;\cf5 \cb1 \
-\cb3             \cf4 margin-bottom:\cf5  \cf11 1rem\cf9 ;\cf5 \cb1 \
-\cb3             \cf4 border-radius:\cf5  \cf11 15px\cf9 ;\cf5 \cb1 \
-\cb3             \cf4 border:\cf5  \cf11 1px\cf5  \cf7 solid\cf5  #eee\cf9 ;\cf5 \cb1 \
-\cb3             \cf4 transition:\cf5  \cf7 box-shadow\cf5  \cf11 0.3s\cf5  \cf7 ease\cf9 ;\cf5 \cb1 \
-\cb3         \cf9 \}\cf5 \cb1 \
-\cb3         \cf2 .input-card:focus-within\cf5  \cf9 \{\cf5 \cb1 \
-\cb3              \cf4 box-shadow:\cf5  \cf11 0\cf5  \cf11 0\cf5  \cf11 15px\cf5  \cf7 rgba(\cf11 216\cf9 ,\cf5  \cf11 27\cf9 ,\cf5  \cf11 96\cf9 ,\cf5  \cf11 0.2\cf7 )\cf9 ;\cf5 \cb1 \
-\cb3         \cf9 \}\cf5 \cb1 \
-\
-\cb3         \cf2 .input-card\cf5  \cf2 label\cf5  \cf9 \{\cf5 \cb1 \
-\cb3             \cf4 display:\cf5  \cf7 block\cf9 ;\cf5 \cb1 \
-\cb3             \cf4 margin-bottom:\cf5  \cf11 0.5rem\cf9 ;\cf5 \cb1 \
-\cb3             \cf4 font-weight:\cf5  \cf11 700\cf9 ;\cf5 \cb1 \
-\cb3             \cf4 color:\cf5  #555\cf9 ;\cf5 \cb1 \
-\cb3             \cf4 font-size:\cf5  \cf11 1rem\cf9 ;\cf5 \cb1 \
-\cb3         \cf9 \}\cf5 \cb1 \
-\
-\cb3         \cf2 .input-card\cf5  \cf2 input\cf9 ,\cf5  \cf2 .input-card\cf5  \cf2 select\cf5  \cf9 \{\cf5 \cb1 \
-\cb3             \cf4 width:\cf5  \cf11 100%\cf9 ;\cf5 \cb1 \
-\cb3             \cf4 padding:\cf5  \cf11 0.75rem\cf9 ;\cf5 \cb1 \
-\cb3             \cf4 border:\cf5  \cf11 1px\cf5  \cf7 solid\cf5  #ccc\cf9 ;\cf5 \cb1 \
-\cb3             \cf4 border-radius:\cf5  \cf11 8px\cf9 ;\cf5 \cb1 \
-\cb3             \cf4 font-size:\cf5  \cf11 1rem\cf9 ;\cf5 \cb1 \
-\cb3             \cf4 transition:\cf5  \cf7 border-color\cf5  \cf11 0.3s\cf5  \cf7 ease\cf9 ;\cf5 \cb1 \
-\cb3         \cf9 \}\cf5 \cb1 \
-\cb3         \cf2 .input-card\cf5  \cf2 input:focus\cf9 ,\cf5  \cf2 .input-card\cf5  \cf2 select:focus\cf5  \cf9 \{\cf5 \cb1 \
-\cb3             \cf4 outline:\cf5  \cf7 none\cf9 ;\cf5 \cb1 \
-\cb3             \cf4 border-color:\cf5  #d81b60\cf9 ;\cf5 \cb1 \
-\cb3         \cf9 \}\cf5 \cb1 \
-\cb3         \cb1 \
-\cb3         \cf8 /* 
-\f1 \'a4\'e9\'b4\'c1\'bf\'ef\'be\'dc\'be\'b9\'bc\'cb\'a6\'a1
-\f0  */\cf5 \cb1 \
-\cb3         \cf2 .date-picker-container\cf5  \cf9 \{\cf5 \cb1 \
-\cb3             \cf4 display:\cf5  \cf7 flex\cf9 ;\cf5 \cb1 \
-\cb3             \cf4 align-items:\cf5  \cf7 center\cf9 ;\cf5 \cb1 \
-\cb3             \cf4 gap:\cf5  \cf11 1rem\cf9 ;\cf5 \cb1 \
-\cb3         \cf9 \}\cf5 \cb1 \
-\cb3         \cf2 #date-input\cf5  \cf9 \{\cf5 \cb1 \
-\cb3             \cf4 color:\cf5  #333\cf9 ;\cf5  \cf8 /* 
-\f1 \'bd\'54\'ab\'4f\'bf\'ef\'a4\'a4\'a4\'e9\'b4\'c1\'ab\'e1\'a4\'e5\'a6\'72\'a5\'69\'a8\'a3
-\f0  */\cf5 \cb1 \
-\cb3         \cf9 \}\cf5 \cb1 \
-\cb3         \cf2 #date-display\cf5  \cf9 \{\cf5 \cb1 \
-\cb3             \cf4 font-weight:\cf5  \cf7 bold\cf9 ;\cf5 \cb1 \
-\cb3             \cf4 color:\cf5  #d81b60\cf9 ;\cf5 \cb1 \
-\cb3         \cf9 \}\cf5 \cb1 \
-\cb3         \cb1 \
-\cb3         \cf8 /* 
-\f1 \'c0\'c9\'ae\'d7\'a4\'57\'b6\'c7\'ab\'f6\'b6\'73
-\f0  */\cf5 \cb1 \
-\cb3         \cf2 .upload-area\cf5  \cf9 \{\cf5 \cb1 \
-\cb3             \cf4 display:\cf5  \cf7 flex\cf9 ;\cf5 \cb1 \
-\cb3             \cf4 align-items:\cf5  \cf7 center\cf9 ;\cf5 \cb1 \
-\cb3             \cf4 gap:\cf5  \cf11 1rem\cf9 ;\cf5 \cb1 \
-\cb3         \cf9 \}\cf5 \cb1 \
-\cb3         \cb1 \
-\cb3         \cf2 #lecturer-image-preview\cf5  \cf9 \{\cf5 \cb1 \
-\cb3             \cf4 width:\cf5  \cf11 100px\cf9 ;\cf5 \cb1 \
-\cb3             \cf4 height:\cf5  \cf11 133px\cf9 ;\cf5 \cb1 \
-\cb3             \cf4 object-fit:\cf5  \cf7 cover\cf9 ;\cf5 \cb1 \
-\cb3             \cf4 border-radius:\cf5  \cf11 8px\cf9 ;\cf5 \cb1 \
-\cb3             \cf4 border:\cf5  \cf11 2px\cf5  \cf7 dashed\cf5  #ccc\cf9 ;\cf5 \cb1 \
-\cb3             \cf4 background-color:\cf5  #f8f8f8\cf9 ;\cf5 \cb1 \
-\cb3         \cf9 \}\cf5 \cb1 \
-\
-\cb3         \cf8 /* 
-\f1 \'be\'de\'a7\'40\'ab\'f6\'b6\'73\'b3\'71\'a5\'ce\'bc\'cb\'a6\'a1
-\f0  */\cf5 \cb1 \
-\cb3         \cf2 .action-button\cf5  \cf9 \{\cf5 \cb1 \
-\cb3             \cf4 color:\cf5  \cf7 white\cf9 ;\cf5 \cb1 \
-\cb3             \cf4 padding:\cf5  \cf11 1rem\cf5  \cf11 1.5rem\cf9 ;\cf5 \cb1 \
-\cb3             \cf4 border:\cf5  \cf7 none\cf9 ;\cf5 \cb1 \
-\cb3             \cf4 border-radius:\cf5  \cf11 12px\cf9 ;\cf5 \cb1 \
-\cb3             \cf4 cursor:\cf5  \cf7 pointer\cf9 ;\cf5 \cb1 \
-\cb3             \cf4 font-size:\cf5  \cf11 1.2rem\cf9 ;\cf5 \cb1 \
-\cb3             \cf4 font-weight:\cf5  \cf11 700\cf9 ;\cf5 \cb1 \
-\cb3             \cf4 width:\cf5  \cf11 100%\cf9 ;\cf5 \cb1 \
-\cb3             \cf4 transition:\cf5  \cf7 transform\cf5  \cf11 0.2s\cf5  \cf7 ease\cf9 ,\cf5  \cf7 box-shadow\cf5  \cf11 0.2s\cf5  \cf7 ease\cf9 ;\cf5 \cb1 \
-\cb3             \cf4 text-align:\cf5  \cf7 center\cf9 ;\cf5 \cb1 \
-\cb3         \cf9 \}\cf5 \cb1 \
-\
-\cb3         \cf8 /* 
-\f1 \'a5\'cd\'a6\'a8\'ab\'f6\'b6\'73
-\f0  */\cf5 \cb1 \
-\cb3         \cf2 .generate-button\cf5  \cf9 \{\cf5 \cb1 \
-\cb3             \cf4 background:\cf5  \cf7 linear-gradient(\cf11 45deg\cf9 ,\cf5  #d81b60\cf9 ,\cf5  #f48fb1\cf7 )\cf9 ;\cf5 \cb1 \
-\cb3             \cf4 box-shadow:\cf5  \cf11 0\cf5  \cf11 4px\cf5  \cf11 15px\cf5  \cf7 rgba(\cf11 216\cf9 ,\cf5  \cf11 27\cf9 ,\cf5  \cf11 96\cf9 ,\cf5  \cf11 0.3\cf7 )\cf9 ;\cf5 \cb1 \
-\cb3         \cf9 \}\cf5 \cb1 \
-\cb3         \cf2 .generate-button:hover\cf5  \cf9 \{\cf5  \cf4 transform:\cf5  \cf7 translateY(\cf11 -2px\cf7 )\cf9 ;\cf5  \cf4 box-shadow:\cf5  \cf11 0\cf5  \cf11 6px\cf5  \cf11 20px\cf5  \cf7 rgba(\cf11 216\cf9 ,\cf5  \cf11 27\cf9 ,\cf5  \cf11 96\cf9 ,\cf5  \cf11 0.4\cf7 )\cf9 ;\cf5  \cf9 \}\cf5 \cb1 \
-\cb3         \cb1 \
-\cb3         \cf8 /* 
-\f1 \'a6\'43\'a6\'4c\'ab\'f6\'b6\'73
-\f0  */\cf5 \cb1 \
-\cb3         \cf2 .print-button\cf5  \cf9 \{\cf5 \cb1 \
-\cb3             \cf4 background:\cf5  \cf7 linear-gradient(\cf11 45deg\cf9 ,\cf5  #42a5f5\cf9 ,\cf5  #90caf9\cf7 )\cf9 ;\cf5 \cb1 \
-\cb3             \cf4 box-shadow:\cf5  \cf11 0\cf5  \cf11 4px\cf5  \cf11 15px\cf5  \cf7 rgba(\cf11 66\cf9 ,\cf5  \cf11 165\cf9 ,\cf5  \cf11 245\cf9 ,\cf5  \cf11 0.3\cf7 )\cf9 ;\cf5 \cb1 \
-\cb3         \cf9 \}\cf5 \cb1 \
-\cb3         \cf2 .print-button:hover\cf5  \cf9 \{\cf5  \cf4 transform:\cf5  \cf7 translateY(\cf11 -2px\cf7 )\cf9 ;\cf5  \cf4 box-shadow:\cf5  \cf11 0\cf5  \cf11 6px\cf5  \cf11 20px\cf5  \cf7 rgba(\cf11 66\cf9 ,\cf5  \cf11 165\cf9 ,\cf5  \cf11 245\cf9 ,\cf5  \cf11 0.4\cf7 )\cf9 ;\cf5  \cf9 \}\cf5 \cb1 \
-\
-\
-\cb3         \cf8 /* 
-\f1 \'ae\'fc\'b3\'f8\'b9\'77\'c4\'fd\'ae\'65\'be\'b9
-\f0  */\cf5 \cb1 \
-\cb3         \cf2 #poster-preview-container\cf5  \cf9 \{\cf5 \cb1 \
-\cb3             \cf4 margin-top:\cf5  \cf11 1rem\cf9 ;\cf5 \cb1 \
-\cb3             \cf4 border:\cf5  \cf11 1px\cf5  \cf7 solid\cf5  #DDD\cf9 ;\cf5 \cb1 \
-\cb3             \cf4 box-shadow:\cf5  \cf11 0\cf5  \cf11 10px\cf5  \cf11 25px\cf5  \cf7 rgba(\cf11 0\cf9 ,\cf5  \cf11 0\cf9 ,\cf5  \cf11 0\cf9 ,\cf5  \cf11 0.15\cf7 )\cf9 ;\cf5 \cb1 \
-\cb3             \cf4 border-radius:\cf5  \cf11 15px\cf9 ;\cf5 \cb1 \
-\cb3             \cf4 overflow:\cf5  \cf7 hidden\cf9 ;\cf5 \cb1 \
-\cb3             \cf4 width:\cf5  \cf11 100%\cf9 ;\cf5 \cb1 \
-\cb3             \cf4 max-width:\cf5  \cf11 500px\cf9 ;\cf5 \cb1 \
-\cb3             \cf4 background-color:\cf5  #fff\cf9 ;\cf5 \cb1 \
-\cb3             \cf4 transition:\cf5  \cf7 aspect-ratio\cf5  \cf11 0.4s\cf5  \cf7 ease\cf9 ,\cf5  \cf7 max-width\cf5  \cf11 0.4s\cf5  \cf7 ease\cf9 ;\cf5 \cb1 \
-\cb3         \cf9 \}\cf5 \cb1 \
-\
-\cb3         \cf2 #poster-preview-iframe\cf5  \cf9 \{\cf5  \cf4 width:\cf5  \cf11 100%\cf9 ;\cf5  \cf4 height:\cf5  \cf11 100%\cf9 ;\cf5  \cf4 border:\cf5  \cf7 none\cf9 ;\cf5  \cf9 \}\cf5 \cb1 \
-\cb3     \cf6 </\cf2 style\cf6 >\cf5 \cb1 \
-\cf6 \cb3 </\cf2 head\cf6 >\cf5 \cb1 \
-\cf6 \cb3 <\cf2 body\cf6 >\cf5 \cb1 \
-\cb3     \cf6 <\cf2 div\cf5  \cf4 class\cf6 =\cf7 "generator-container"\cf6 >\cf5 \cb1 \
-\cb3         \cf6 <\cf2 div\cf5  \cf4 class\cf6 =\cf7 "w-full text-center mb-8"\cf6 >\cf5 \cb1 \
-\cb3             \cf6 <\cf2 h1\cf5  \cf4 class\cf6 =\cf7 "generator-title"\cf6 >\cf5 Gloria
-\f1 \'aa\'ba\'ae\'fc\'b3\'f8\'a5\'cd\'a6\'a8\'be\'b9
-\f0 \cf6 </\cf2 h1\cf6 >\cf5 \cb1 \
-\cb3         \cf6 </\cf2 div\cf6 >\cf5 \cb1 \
-\
-\cb3         \cf6 <\cf2 div\cf5  \cf4 class\cf6 =\cf7 "grid grid-cols-1 md:grid-cols-2 gap-4"\cf6 >\cf5 \cb1 \
-\cb3             \cf6 <\cf2 div\cf5  \cf4 class\cf6 =\cf7 "input-card"\cf6 ><\cf2 label\cf5  \cf4 for\cf6 =\cf7 "event-title"\cf6 >
-\f1 \cf5 \'ac\'a1\'b0\'ca\'a5\'44\'c3\'44\'a1\'47
-\f0 \cf6 </\cf2 label\cf6 ><\cf2 input\cf5  \cf4 type\cf6 =\cf7 "text"\cf5  \cf4 id\cf6 =\cf7 "event-title"\cf5  \cf4 placeholder\cf6 =\cf7 "
-\f1 \'bd\'d0\'bf\'e9\'a4\'4a\'ac\'a1\'b0\'ca\'a5\'44\'c3\'44
-\f0 "\cf5  \cf4 value\cf6 =\cf7 ""\cf6 ></\cf2 div\cf6 >\cf5 \cb1 \
-\cb3             \cf6 <\cf2 div\cf5  \cf4 class\cf6 =\cf7 "input-card"\cf6 ><\cf2 label\cf5  \cf4 for\cf6 =\cf7 "speaker"\cf6 >
-\f1 \cf5 \'c1\'bf\'ae\'76\'a1\'47
-\f0 \cf6 </\cf2 label\cf6 ><\cf2 input\cf5  \cf4 type\cf6 =\cf7 "text"\cf5  \cf4 id\cf6 =\cf7 "speaker"\cf5  \cf4 placeholder\cf6 =\cf7 "
-\f1 \'bd\'d0\'bf\'e9\'a4\'4a\'c1\'bf\'ae\'76\'a9\'6d\'a6\'57
-\f0 "\cf5  \cf4 value\cf6 =\cf7 ""\cf6 ></\cf2 div\cf6 >\cf5 \cb1 \
-\cb3             \cf6 <\cf2 div\cf5  \cf4 class\cf6 =\cf7 "input-card"\cf6 >\cf5 \cb1 \
-\cb3                 \cf6 <\cf2 label\cf5  \cf4 for\cf6 =\cf7 "date-input"\cf6 >
-\f1 \cf5 \'a4\'e9\'b4\'c1\'a1\'47
-\f0 \cf6 </\cf2 label\cf6 >\cf5 \cb1 \
-\cb3                 \cf6 <\cf2 div\cf5  \cf4 class\cf6 =\cf7 "date-picker-container"\cf6 >\cf5 \cb1 \
-\cb3                     \cf6 <\cf2 input\cf5  \cf4 type\cf6 =\cf7 "date"\cf5  \cf4 id\cf6 =\cf7 "date-input"\cf6 >\cf5 \cb1 \
-\cb3                     \cf6 <\cf2 span\cf5  \cf4 id\cf6 =\cf7 "date-display"\cf6 ></\cf2 span\cf6 >\cf5 \cb1 \
-\cb3                 \cf6 </\cf2 div\cf6 >\cf5 \cb1 \
-\cb3             \cf6 </\cf2 div\cf6 >\cf5 \cb1 \
-\cb3             \cf6 <\cf2 div\cf5  \cf4 class\cf6 =\cf7 "input-card"\cf6 ><\cf2 label\cf5  \cf4 for\cf6 =\cf7 "time"\cf6 >
-\f1 \cf5 \'ae\'c9\'b6\'a1\'a1\'47
-\f0 \cf6 </\cf2 label\cf6 ><\cf2 input\cf5  \cf4 type\cf6 =\cf7 "text"\cf5  \cf4 id\cf6 =\cf7 "time"\cf5  \cf4 placeholder\cf6 =\cf7 "
-\f1 \'bd\'d0\'bf\'e9\'a4\'4a\'ae\'c9\'b6\'a1
-\f0 "\cf5  \cf4 value\cf6 =\cf7 ""\cf6 ></\cf2 div\cf6 >\cf5 \cb1 \
-\cb3         \cf6 </\cf2 div\cf6 >\cf5 \cb1 \
-\
-\cb3         \cf6 <\cf2 div\cf5  \cf4 class\cf6 =\cf7 "input-card"\cf6 ><\cf2 label\cf5  \cf4 for\cf6 =\cf7 "location"\cf6 >
-\f1 \cf5 \'b9\'ea\'c5\'e9\'a9\'ce\'bd\'75\'a4\'57
-\f0 meet
-\f1 \'a1\'47
-\f0 \cf6 </\cf2 label\cf6 ><\cf2 input\cf5  \cf4 type\cf6 =\cf7 "text"\cf5  \cf4 id\cf6 =\cf7 "location"\cf5  \cf4 placeholder\cf6 =\cf7 "
-\f1 \'a6\'61\'c2\'49\'a9\'ce
-\f0 Meet
-\f1 \'ba\'f4\'a7\'7d
-\f0 "\cf5  \cf4 value\cf6 =\cf7 ""\cf6 ></\cf2 div\cf6 >\cf5 \cb1 \
-\cb3         \cb1 \
-\cb3         \cf6 <\cf2 div\cf5  \cf4 class\cf6 =\cf7 "input-card"\cf6 >\cf5 \cb1 \
-\cb3             \cf6 <\cf2 label\cf5  \cf4 for\cf6 =\cf7 "lecturer-image"\cf6 >
-\f1 \cf5 \'c1\'bf\'ae\'76\'c0\'59\'b9\'b3\'a4\'57\'b6\'c7\'a1\'47
-\f0 \cf6 </\cf2 label\cf6 >\cf5 \cb1 \
-\cb3             \cf6 <\cf2 div\cf5  \cf4 class\cf6 =\cf7 "upload-area"\cf6 >\cf5 \cb1 \
-\cb3                 \cf6 <\cf2 input\cf5  \cf4 type\cf6 =\cf7 "file"\cf5  \cf4 id\cf6 =\cf7 "lecturer-image"\cf5  \cf4 accept\cf6 =\cf7 "image/*"\cf6 >\cf5 \cb1 \
-\cb3                 \cf6 <\cf2 img\cf5  \cf4 id\cf6 =\cf7 "lecturer-image-preview"\cf5  \cf4 src\cf6 =\cf7 "https://placehold.co/300x400/EFEFEF/AAAAAA?text=
-\f1 \'b9\'77\'c4\'fd
-\f0 "\cf5  \cf4 alt\cf6 =\cf7 "
-\f1 \'c1\'bf\'ae\'76\'c0\'59\'b9\'b3\'b9\'77\'c4\'fd
-\f0 "\cf6 >\cf5 \cb1 \
-\cb3             \cf6 </\cf2 div\cf6 >\cf5 \cb1 \
-\cb3         \cf6 </\cf2 div\cf6 >\cf5 \cb1 \
-\cb3         \cb1 \
-\cb3         \cf6 <\cf2 div\cf5  \cf4 class\cf6 =\cf7 "grid grid-cols-1 md:grid-cols-2 gap-4"\cf6 >\cf5 \cb1 \
-\cb3             \cf6 <\cf2 div\cf5  \cf4 class\cf6 =\cf7 "input-card"\cf6 >\cf5 \cb1 \
-\cb3                 \cf6 <\cf2 label\cf5  \cf4 for\cf6 =\cf7 "avatar-ratio"\cf6 >
-\f1 \cf5 \'c0\'59\'b9\'b3\'a4\'f1\'a8\'d2\'a1\'47
-\f0 \cf6 </\cf2 label\cf6 >\cf5 \cb1 \
-\cb3                 \cf6 <\cf2 select\cf5  \cf4 id\cf6 =\cf7 "avatar-ratio"\cf6 >\cf5 \cb1 \
-\cb3                     \cf6 <\cf2 option\cf5  \cf4 value\cf6 =\cf7 "portrait"\cf6 >
-\f1 \cf5 \'aa\'bd\'a6\'a1
-\f0  (9:16)\cf6 </\cf2 option\cf6 >\cf5 \cb1 \
-\cb3                     \cf6 <\cf2 option\cf5  \cf4 value\cf6 =\cf7 "square"\cf6 >
-\f1 \cf5 \'a4\'e8\'a7\'ce
-\f0  (1:1)\cf6 </\cf2 option\cf6 >\cf5 \cb1 \
-\cb3                 \cf6 </\cf2 select\cf6 >\cf5 \cb1 \
-\cb3             \cf6 </\cf2 div\cf6 >\cf5 \cb1 \
-\cb3              \cf6 <\cf2 div\cf5  \cf4 class\cf6 =\cf7 "input-card"\cf6 >\cf5 \cb1 \
-\cb3                 \cf6 <\cf2 label\cf5  \cf4 for\cf6 =\cf7 "poster-size"\cf6 >
-\f1 \cf5 \'ae\'fc\'b3\'f8\'a4\'d8\'a4\'6f\'a1\'47
-\f0 \cf6 </\cf2 label\cf6 >\cf5 \cb1 \
-\cb3                 \cf6 <\cf2 select\cf5  \cf4 id\cf6 =\cf7 "poster-size"\cf6 >\cf5 \cb1 \
-\cb3                     \cf6 <\cf2 option\cf5  \cf4 value\cf6 =\cf7 "9/16"\cf6 >
-\f1 \cf5 \'aa\'bd\'a6\'a1
-\f0  (9:16)\cf6 </\cf2 option\cf6 >\cf5 \cb1 \
-\cb3                     \cf6 <\cf2 option\cf5  \cf4 value\cf6 =\cf7 "16/9"\cf6 >
-\f1 \cf5 \'be\'ee\'a6\'a1
-\f0  (16:9)\cf6 </\cf2 option\cf6 >\cf5 \cb1 \
-\cb3                 \cf6 </\cf2 select\cf6 >\cf5 \cb1 \
-\cb3             \cf6 </\cf2 div\cf6 >\cf5 \cb1 \
-\cb3         \cf6 </\cf2 div\cf6 >\cf5 \cb1 \
-\
-\cb3         \cf6 <\cf2 div\cf5  \cf4 class\cf6 =\cf7 "grid grid-cols-1 md:grid-cols-2 gap-4"\cf6 >\cf5 \cb1 \
-\cb3             \cf6 <\cf2 div\cf5  \cf4 class\cf6 =\cf7 "input-card"\cf6 >\cf5 \cb1 \
-\cb3                 \cf6 <\cf2 label\cf5  \cf4 for\cf6 =\cf7 "style"\cf6 >
-\f1 \cf5 \'c0\'59\'b9\'b3\'ad\'b7\'ae\'e6\'a1\'47
-\f0 \cf6 </\cf2 label\cf6 >\cf5 \cb1 \
-\cb3                 \cf6 <\cf2 select\cf5  \cf4 id\cf6 =\cf7 "style"\cf6 >\cf5 \cb1 \
-\cb3                     \cf6 <\cf2 option\cf5  \cf4 value\cf6 =\cf7 "realistic"\cf6 >
-\f1 \cf5 \'b5\'4c\'c2\'6f\'c3\'e8
-\f0  (
-\f1 \'bc\'67\'b9\'ea
-\f0 )\cf6 </\cf2 option\cf6 >\cf5 \cb1 \
-\cb3                     \cf6 <\cf2 option\cf5  \cf4 value\cf6 =\cf7 "cartoon"\cf6 >
-\f1 \cf5 \'ba\'a9\'b5\'65\'ad\'b7\'ae\'e6
-\f0 \cf6 </\cf2 option\cf6 >\cf5 \cb1 \
-\cb3                     \cf6 <\cf2 option\cf5  \cf4 value\cf6 =\cf7 "illustration"\cf6 >
-\f1 \cf5 \'b4\'a1\'b5\'65\'ad\'b7\'ae\'e6
-\f0 \cf6 </\cf2 option\cf6 >\cf5 \cb1 \
-\cb3                     \cf6 <\cf2 option\cf5  \cf4 value\cf6 =\cf7 "ghibli"\cf6 >
-\f1 \cf5 \'ae\'63\'b1\'54\'c2\'40\'b0\'ca\'ba\'a9
-\f0 \cf6 </\cf2 option\cf6 >\cf5 \cb1 \
-\cb3                     \cf6 <\cf2 option\cf5  \cf4 value\cf6 =\cf7 "3d-doll"\cf6 >\cf5 3D
-\f1 \'ab\'bd\'ab\'bd
-\f0 \cf6 </\cf2 option\cf6 >\cf5 \cb1 \
-\cb3                     \cf6 <\cf2 option\cf5  \cf4 value\cf6 =\cf7 "vangogh"\cf6 >
-\f1 \cf5 \'b1\'eb\'a8\'a6\'a6\'57\'b5\'65
-\f0 \cf6 </\cf2 option\cf6 >\cf5 \cb1 \
-\cb3                 \cf6 </\cf2 select\cf6 >\cf5 \cb1 \
-\cb3             \cf6 </\cf2 div\cf6 >\cf5 \cb1 \
-\cb3             \cf6 <\cf2 div\cf5  \cf4 class\cf6 =\cf7 "input-card"\cf6 >\cf5 \cb1 \
-\cb3                 \cf6 <\cf2 label\cf5  \cf4 for\cf6 =\cf7 "poster-background"\cf6 >
-\f1 \cf5 \'ae\'fc\'b3\'f8\'ad\'49\'b4\'ba\'a1\'47
-\f0 \cf6 </\cf2 label\cf6 >\cf5 \cb1 \
-\cb3                 \cf6 <\cf2 select\cf5  \cf4 id\cf6 =\cf7 "poster-background"\cf6 >\cf5 \cb1 \
-\cb3                     \cf6 <\cf2 option\cf5  \cf4 value\cf6 =\cf7 "default"\cf6 >
-\f1 \cf5 \'b9\'77\'b3\'5d
-\f0  (
-\f1 \'a5\'d5\'a9\'b3
-\f0 )\cf6 </\cf2 option\cf6 >\cf5 \cb1 \
-\cb3                     \cf6 <\cf2 option\cf5  \cf4 value\cf6 =\cf7 "miyazaki"\cf6 >
-\f1 \cf5 \'ae\'63\'b1\'54\'c2\'40\'b0\'ca\'ba\'a9\'ad\'b7\'ae\'e6
-\f0 \cf6 </\cf2 option\cf6 >\cf5 \cb1 \
-\cb3                     \cf6 <\cf2 option\cf5  \cf4 value\cf6 =\cf7 "nile"\cf6 >
-\f1 \cf5 \'a5\'a7\'c3\'b9\'aa\'65\'a4\'6b\'a8\'e0\'ad\'b7\'ae\'e6
-\f0 \cf6 </\cf2 option\cf6 >\cf5 \cb1 \
-\cb3                     \cf6 <\cf2 option\cf5  \cf4 value\cf6 =\cf7 "solid"\cf6 >
-\f1 \cf5 \'c0\'48\'be\'f7\'b3\'e6\'a6\'e2
-\f0 \cf6 </\cf2 option\cf6 >\cf5 \cb1 \
-\cb3                     \cf6 <\cf2 option\cf5  \cf4 value\cf6 =\cf7 "gradient"\cf6 >
-\f1 \cf5 \'c0\'48\'be\'f7\'ba\'a5\'bc\'68
-\f0 \cf6 </\cf2 option\cf6 >\cf5 \cb1 \
-\cb3                     \cf6 <\cf2 option\cf5  \cf4 value\cf6 =\cf7 "famous_painting"\cf6 >
-\f1 \cf5 \'a5\'40\'ac\'c9\'a6\'57\'b5\'65\'ad\'b7\'ae\'e6
-\f0 \cf6 </\cf2 option\cf6 >\cf5 \cb1 \
-\cb3                 \cf6 </\cf2 select\cf6 >\cf5 \cb1 \
-\cb3             \cf6 </\cf2 div\cf6 >\cf5 \cb1 \
-\cb3         \cf6 </\cf2 div\cf6 >\cf5 \cb1 \
-\
-\
-\cb3         \cf6 <\cf2 div\cf5  \cf4 class\cf6 =\cf7 "grid grid-cols-1 md:grid-cols-2 gap-4"\cf6 >\cf5 \cb1 \
-\cb3             \cf6 <\cf2 div\cf5  \cf4 class\cf6 =\cf7 "input-card !p-0"\cf6 ><\cf2 button\cf5  \cf4 class\cf6 =\cf7 "action-button generate-button"\cf5  \cf4 onclick\cf6 =\cf7 "generatePoster()"\cf6 >
-\f2 \cf5 \uc0\u10024 
-\f0  
-\f1 \'a5\'cd\'a6\'a8\'ae\'fc\'b3\'f8
-\f0  
-\f2 \uc0\u10024 
-\f0 \cf6 </\cf2 button\cf6 ></\cf2 div\cf6 >\cf5 \cb1 \
-\cb3             \cf6 <\cf2 div\cf5  \cf4 class\cf6 =\cf7 "input-card !p-0"\cf6 ><\cf2 button\cf5  \cf4 class\cf6 =\cf7 "action-button print-button"\cf5  \cf4 onclick\cf6 =\cf7 "printPoster()"\cf6 >
-\f2 \cf5 \uc0\u55357 \u56744 \u65039 
-\f0  
-\f1 \'a6\'43\'a6\'4c\'ae\'fc\'b3\'f8
-\f0 \cf6 </\cf2 button\cf6 ></\cf2 div\cf6 >\cf5 \cb1 \
-\cb3         \cf6 </\cf2 div\cf6 >\cf5 \cb1 \
-\cb3     \cf6 </\cf2 div\cf6 >\cf5 \cb1 \
-\
-\cb3     \cf6 <\cf2 div\cf5  \cf4 id\cf6 =\cf7 "poster-preview-container"\cf6 >\cf5 \cb1 \
-\cb3         \cf6 <\cf2 iframe\cf5  \cf4 id\cf6 =\cf7 "poster-preview-iframe"\cf5  \cf4 title\cf6 =\cf7 "
-\f1 \'ae\'fc\'b3\'f8\'b9\'77\'c4\'fd
-\f0 "\cf6 ></\cf2 iframe\cf6 >\cf5 \cb1 \
-\cb3     \cf6 </\cf2 div\cf6 >\cf5 \cb1 \
-\
-\cb3     \cf6 <\cf2 script\cf6 >\cf5 \cb1 \
-\cb3         \cf8 // --- Event Listeners ---\cf5 \cb1 \
-\cb3         window\cf9 .\cf5 onload \cf9 =\cf5  \cf12 function\cf9 ()\cf5  \cf9 \{\cf5 \cb1 \
-\cb3             updatePosterSize\cf9 ();\cf5  \cf8 // Set initial poster size\cf5 \cb1 \
-\cb3             generatePoster\cf9 ();\cf5 \cb1 \
-\cb3         \cf9 \};\cf5 \cb1 \
-\cb3     \cb1 \
-\cb3         document\cf9 .\cf5 getElementById\cf9 (\cf10 'lecturer-image'\cf9 ).\cf5 addEventListener\cf9 (\cf10 'change'\cf9 ,\cf5  \cf12 function\cf9 ()\cf5  \cf9 \{\cf5 \cb1 \
-\cb3             \cf12 const\cf5  file \cf9 =\cf5  \cf12 this\cf9 .\cf5 files \cf9 &&\cf5  \cf12 this\cf9 .\cf5 files\cf9 .\cf5 length \cf9 >\cf5  \cf13 0\cf5  \cf9 ?\cf5  \cf12 this\cf9 .\cf5 files\cf9 [\cf13 0\cf9 ]\cf5  \cf9 :\cf5  \cf12 null\cf9 ;\cf5 \cb1 \
-\cb3             \cf12 if\cf5  \cf9 (\cf5 file\cf9 )\cf5  \cf9 \{\cf5 \cb1 \
-\cb3                 \cf12 const\cf5  reader \cf9 =\cf5  \cf12 new\cf5  \cf14 FileReader\cf9 ();\cf5 \cb1 \
-\cb3                 reader\cf9 .\cf5 onload \cf9 =\cf5  \cf12 function\cf9 (\cf5 e\cf9 )\cf5  \cf9 \{\cf5 \cb1 \
-\cb3                     document\cf9 .\cf5 getElementById\cf9 (\cf10 'lecturer-image-preview'\cf9 ).\cf5 src \cf9 =\cf5  e\cf9 .\cf5 target\cf9 .\cf5 result\cf9 ;\cf5 \cb1 \
-\cb3                 \cf9 \}\cf5 \cb1 \
-\cb3                 reader\cf9 .\cf5 readAsDataURL\cf9 (\cf5 file\cf9 );\cf5 \cb1 \
-\cb3             \cf9 \}\cf5 \cb1 \
-\cb3         \cf9 \});\cf5 \cb1 \
-\cb3         \cb1 \
-\cb3         document\cf9 .\cf5 getElementById\cf9 (\cf10 'date-input'\cf9 ).\cf5 addEventListener\cf9 (\cf10 'change'\cf9 ,\cf5  updateDateDisplay\cf9 );\cf5 \cb1 \
-\cb3         document\cf9 .\cf5 getElementById\cf9 (\cf10 'poster-size'\cf9 ).\cf5 addEventListener\cf9 (\cf10 'change'\cf9 ,\cf5  updatePosterSize\cf9 );\cf5 \cb1 \
-\
-\cb3         \cf8 // --- Core Functions ---\cf5 \cb1 \
-\cb3         \cf12 function\cf5  updateDateDisplay\cf9 ()\cf5  \cf9 \{\cf5 \cb1 \
-\cb3             \cf12 const\cf5  dateInput \cf9 =\cf5  document\cf9 .\cf5 getElementById\cf9 (\cf10 'date-input'\cf9 );\cf5 \cb1 \
-\cb3             \cf12 const\cf5  dateDisplay \cf9 =\cf5  document\cf9 .\cf5 getElementById\cf9 (\cf10 'date-display'\cf9 );\cf5 \cb1 \
-\cb3             \cf12 if\cf5  \cf9 (\cf5 dateInput\cf9 .\cf5 value\cf9 )\cf5  \cf9 \{\cf5 \cb1 \
-\cb3                 \cf12 const\cf5  dateValue \cf9 =\cf5  dateInput\cf9 .\cf5 value\cf9 ;\cf5 \cb1 \
-\cb3                 \cf12 const\cf5  \cf9 [\cf5 year\cf9 ,\cf5  month\cf9 ,\cf5  day\cf9 ]\cf5  \cf9 =\cf5  dateValue\cf9 .\cf5 split\cf9 (\cf10 '-'\cf9 ).\cf5 map\cf9 (\cf14 Number\cf9 );\cf5 \cb1 \
-\cb3                 \cf12 const\cf5  date \cf9 =\cf5  \cf12 new\cf5  \cf14 Date\cf9 (\cf14 Date\cf9 .\cf14 UTC\cf9 (\cf5 year\cf9 ,\cf5  month \cf9 -\cf5  \cf13 1\cf9 ,\cf5  day\cf9 ));\cf5 \cb1 \
-\cb3                 \cb1 \
-\cb3                 \cf12 const\cf5  options \cf9 =\cf5  \cf9 \{\cf5  year\cf9 :\cf5  \cf10 'numeric'\cf9 ,\cf5  month\cf9 :\cf5  \cf10 'long'\cf9 ,\cf5  day\cf9 :\cf5  \cf10 'numeric'\cf9 ,\cf5  weekday\cf9 :\cf5  \cf10 'long'\cf9 ,\cf5  timeZone\cf9 :\cf5  \cf10 'UTC'\cf5  \cf9 \};\cf5 \cb1 \
-\cb3                 dateDisplay\cf9 .\cf5 textContent \cf9 =\cf5  \cf12 new\cf5  \cf14 Intl\cf9 .\cf14 DateTimeFormat\cf9 (\cf10 'zh-Hant-TW'\cf9 ,\cf5  options\cf9 ).\cf5 format\cf9 (\cf5 date\cf9 );\cf5 \cb1 \
-\cb3             \cf9 \}\cf5  \cf12 else\cf5  \cf9 \{\cf5 \cb1 \
-\cb3                 dateDisplay\cf9 .\cf5 textContent \cf9 =\cf5  \cf10 ''\cf9 ;\cf5 \cb1 \
-\cb3             \cf9 \}\cf5 \cb1 \
-\cb3         \cf9 \}\cf5 \cb1 \
-\cb3         \cb1 \
-\cb3         \cf12 function\cf5  updatePosterSize\cf9 ()\cf5  \cf9 \{\cf5 \cb1 \
-\cb3             \cf12 const\cf5  size \cf9 =\cf5  document\cf9 .\cf5 getElementById\cf9 (\cf10 'poster-size'\cf9 ).\cf5 value\cf9 ;\cf5 \cb1 \
-\cb3             \cf12 const\cf5  container \cf9 =\cf5  document\cf9 .\cf5 getElementById\cf9 (\cf10 'poster-preview-container'\cf9 );\cf5 \cb1 \
-\cb3             container\cf9 .\cf5 style\cf9 .\cf5 aspectRatio \cf9 =\cf5  size\cf9 ;\cf5 \cb1 \
-\cb3             \cb1 \
-\cb3             \cf12 if\cf5  \cf9 (\cf5 size \cf9 ===\cf5  \cf10 '16/9'\cf9 )\cf5  \cf9 \{\cf5 \cb1 \
-\cb3                 container\cf9 .\cf5 style\cf9 .\cf5 maxWidth \cf9 =\cf5  \cf10 '800px'\cf9 ;\cf5 \cb1 \
-\cb3             \cf9 \}\cf5  \cf12 else\cf5  \cf9 \{\cf5 \cb1 \
-\cb3                 container\cf9 .\cf5 style\cf9 .\cf5 maxWidth \cf9 =\cf5  \cf10 '500px'\cf9 ;\cf5 \cb1 \
-\cb3             \cf9 \}\cf5 \cb1 \
-\cb3         \cf9 \}\cf5 \cb1 \
-\
-\cb3         \cf12 function\cf5  generatePoster\cf9 ()\cf5  \cf9 \{\cf5 \cb1 \
-\cb3             \cf12 const\cf5  data \cf9 =\cf5  \cf9 \{\cf5 \cb1 \
-\cb3                 eventTitle\cf9 :\cf5  document\cf9 .\cf5 getElementById\cf9 (\cf10 'event-title'\cf9 ).\cf5 value \cf9 ||\cf5  \cf10 '
-\f1 \'bd\'d0\'bf\'e9\'a4\'4a\'a5\'44\'c3\'44
-\f0 '\cf9 ,\cf5 \cb1 \
-\cb3                 speaker\cf9 :\cf5  document\cf9 .\cf5 getElementById\cf9 (\cf10 'speaker'\cf9 ).\cf5 value \cf9 ||\cf5  \cf10 '
-\f1 \'ab\'dd\'a9\'77\'c1\'bf\'ae\'76
-\f0 '\cf9 ,\cf5 \cb1 \
-\cb3                 date\cf9 :\cf5  document\cf9 .\cf5 getElementById\cf9 (\cf10 'date-display'\cf9 ).\cf5 textContent \cf9 ||\cf5  \cf10 '
-\f1 \'ab\'dd\'a9\'77\'a4\'e9\'b4\'c1
-\f0 '\cf9 ,\cf5 \cb1 \
-\cb3                 time\cf9 :\cf5  document\cf9 .\cf5 getElementById\cf9 (\cf10 'time'\cf9 ).\cf5 value \cf9 ||\cf5  \cf10 '
-\f1 \'ab\'dd\'a9\'77\'ae\'c9\'b6\'a1
-\f0 '\cf9 ,\cf5 \cb1 \
-\cb3                 location\cf9 :\cf5  document\cf9 .\cf5 getElementById\cf9 (\cf10 'location'\cf9 ).\cf5 value \cf9 ||\cf5  \cf10 '
-\f1 \'ab\'dd\'a9\'77\'a6\'61\'c2\'49
-\f0 '\cf9 ,\cf5 \cb1 \
-\cb3                 lecturerImage\cf9 :\cf5  document\cf9 .\cf5 getElementById\cf9 (\cf10 'lecturer-image-preview'\cf9 ).\cf5 src\cf9 ,\cf5 \cb1 \
-\cb3                 style\cf9 :\cf5  document\cf9 .\cf5 getElementById\cf9 (\cf10 'style'\cf9 ).\cf5 value\cf9 ,\cf5 \cb1 \
-\cb3                 avatarRatio\cf9 :\cf5  document\cf9 .\cf5 getElementById\cf9 (\cf10 'avatar-ratio'\cf9 ).\cf5 value\cf9 ,\cf5 \cb1 \
-\cb3                 posterSize\cf9 :\cf5  document\cf9 .\cf5 getElementById\cf9 (\cf10 'poster-size'\cf9 ).\cf5 value\cf9 ,\cf5 \cb1 \
-\cb3                 background\cf9 :\cf5  document\cf9 .\cf5 getElementById\cf9 (\cf10 'poster-background'\cf9 ).\cf5 value\cb1 \
-\cb3             \cf9 \};\cf5 \cb1 \
-\
-\cb3             \cf12 const\cf5  posterHTML \cf9 =\cf5  getPosterHTML\cf9 (\cf5 data\cf9 );\cf5 \cb1 \
-\cb3             \cf12 const\cf5  iframe \cf9 =\cf5  document\cf9 .\cf5 getElementById\cf9 (\cf10 'poster-preview-iframe'\cf9 );\cf5 \cb1 \
-\cb3             iframe\cf9 .\cf5 srcdoc \cf9 =\cf5  posterHTML\cf9 ;\cf5 \cb1 \
-\cb3         \cf9 \}\cf5 \cb1 \
-\
-\cb3         \cf12 function\cf5  printPoster\cf9 ()\cf5  \cf9 \{\cf5 \cb1 \
-\cb3             \cf12 const\cf5  iframe \cf9 =\cf5  document\cf9 .\cf5 getElementById\cf9 (\cf10 'poster-preview-iframe'\cf9 );\cf5 \cb1 \
-\cb3             \cf12 if\cf5  \cf9 (\cf5 iframe \cf9 &&\cf5  iframe\cf9 .\cf5 contentWindow\cf9 )\cf5  \cf9 \{\cf5 \cb1 \
-\cb3                 iframe\cf9 .\cf5 contentWindow\cf9 .\cf5 focus\cf9 ();\cf5 \cb1 \
-\cb3                 iframe\cf9 .\cf5 contentWindow\cf9 .\cf5 print\cf9 ();\cf5 \cb1 \
-\cb3             \cf9 \}\cf5  \cf12 else\cf5  \cf9 \{\cf5 \cb1 \
-\cb3                 alert\cf9 (\cf10 "
-\f1 \'b5\'4c\'aa\'6b\'a6\'43\'a6\'4c\'a1\'41\'ae\'fc\'b3\'f8\'b9\'77\'c4\'fd\'a9\'7c\'a5\'bc\'b7\'c7\'b3\'c6\'a6\'6e\'a1\'43
-\f0 "\cf9 );\cf5 \cb1 \
-\cb3             \cf9 \}\cf5 \cb1 \
-\cb3         \cf9 \}\cf5 \cb1 \
-\cb3         \cb1 \
-\cb3         \cf8 // --- Helper functions for styles ---\cf5 \cb1 \
-\
-\cb3         \cf12 function\cf5  getAvatarFilter\cf9 (\cf5 style\cf9 )\cf5  \cf9 \{\cf5 \cb1 \
-\cb3             \cf12 switch\cf9 (\cf5 style\cf9 )\cf5  \cf9 \{\cf5 \cb1 \
-\cb3                 \cf12 case\cf5  \cf10 'cartoon'\cf9 :\cf5  \cf12 return\cf5  \cf10 'filter: grayscale(1) brightness(1.2) contrast(1.5);'\cf9 ;\cf5 \cb1 \
-\cb3                 \cf12 case\cf5  \cf10 'illustration'\cf9 :\cf5  \cf12 return\cf5  \cf10 'filter: sepia(0.5) saturate(1.4) brightness(1.1);'\cf9 ;\cf5 \cb1 \
-\cb3                 \cf12 case\cf5  \cf10 'ghibli'\cf9 :\cf5  \cf12 return\cf5  \cf10 'filter: saturate(1.2) contrast(1.1) brightness(1.1);'\cf9 ;\cf5 \cb1 \
-\cb3                 \cf12 case\cf5  \cf10 '3d-doll'\cf9 :\cf5  \cf12 return\cf5  \cf10 'filter: saturate(1.5) brightness(1.1);'\cf9 ;\cf5 \cb1 \
-\cb3                 \cf12 case\cf5  \cf10 'vangogh'\cf9 :\cf5  \cf12 return\cf5  \cf10 'filter: contrast(1.4) saturate(1.8) sepia(0.3) hue-rotate(-10deg);'\cf9 ;\cf5 \cb1 \
-\cb3                 \cf12 case\cf5  \cf10 'realistic'\cf9 :\cf5 \cb1 \
-\cb3                 \cf12 default\cf9 :\cf5  \cf12 return\cf5  \cf10 'filter: none;'\cf9 ;\cf5 \cb1 \
-\cb3             \cf9 \}\cf5 \cb1 \
-\cb3         \cf9 \}\cf5 \cb1 \
-\cb3         \cb1 \
-\cb3         \cf12 function\cf5  getBackgroundStyle\cf9 (\cf5 background\cf9 )\cf5  \cf9 \{\cf5 \cb1 \
-\cb3             \cf12 const\cf5  randomColor \cf9 =\cf5  \cf9 ()\cf5  \cf9 =>\cf5  \cf10 '#'\cf5  \cf9 +\cf5  \cf14 Math\cf9 .\cf5 floor\cf9 (\cf14 Math\cf9 .\cf5 random\cf9 ()*\cf13 16777215\cf9 ).\cf5 toString\cf9 (\cf13 16\cf9 ).\cf5 padStart\cf9 (\cf13 6\cf9 ,\cf5  \cf10 '0'\cf9 );\cf5 \cb1 \
-\cb3             \cf12 const\cf5  getTextColor \cf9 =\cf5  \cf9 (\cf5 bgColor\cf9 )\cf5  \cf9 =>\cf5  \cf9 \{\cf5 \cb1 \
-\cb3                 \cf12 const\cf5  color \cf9 =\cf5  \cf9 (\cf5 bgColor\cf9 .\cf5 charAt\cf9 (\cf13 0\cf9 )\cf5  \cf9 ===\cf5  \cf10 '#'\cf9 )\cf5  \cf9 ?\cf5  bgColor\cf9 .\cf5 substring\cf9 (\cf13 1\cf9 ,\cf5  \cf13 7\cf9 )\cf5  \cf9 :\cf5  bgColor\cf9 ;\cf5 \cb1 \
-\cb3                 \cf12 const\cf5  r \cf9 =\cf5  parseInt\cf9 (\cf5 color\cf9 .\cf5 substring\cf9 (\cf13 0\cf9 ,\cf5  \cf13 2\cf9 ),\cf5  \cf13 16\cf9 );\cf5 \cb1 \
-\cb3                 \cf12 const\cf5  g \cf9 =\cf5  parseInt\cf9 (\cf5 color\cf9 .\cf5 substring\cf9 (\cf13 2\cf9 ,\cf5  \cf13 4\cf9 ),\cf5  \cf13 16\cf9 );\cf5 \cb1 \
-\cb3                 \cf12 const\cf5  b \cf9 =\cf5  parseInt\cf9 (\cf5 color\cf9 .\cf5 substring\cf9 (\cf13 4\cf9 ,\cf5  \cf13 6\cf9 ),\cf5  \cf13 16\cf9 );\cf5 \cb1 \
-\cb3                 \cf12 return\cf5  \cf9 (((\cf5 r \cf9 *\cf5  \cf13 299\cf9 )\cf5  \cf9 +\cf5  \cf9 (\cf5 g \cf9 *\cf5  \cf13 587\cf9 )\cf5  \cf9 +\cf5  \cf9 (\cf5 b \cf9 *\cf5  \cf13 114\cf9 ))\cf5  \cf9 /\cf5  \cf13 1000\cf9 )\cf5  \cf9 >\cf5  \cf13 128\cf5  \cf9 ?\cf5  \cf10 '#334155'\cf5  \cf9 :\cf5  \cf10 '#f8fafc'\cf9 ;\cf5 \cb1 \
-\cb3             \cf9 \};\cf5 \cb1 \
-\
-\cb3             \cf12 switch\cf9 (\cf5 background\cf9 )\cf5  \cf9 \{\cf5 \cb1 \
-\cb3                 \cf12 case\cf5  \cf10 'miyazaki'\cf9 :\cf5  \cf12 return\cf5  \cf9 \{\cf5  style\cf9 :\cf5  \cf10 'background: linear-gradient(to bottom, #a7d9ed, #f5f0e1);'\cf9 ,\cf5  textColor\cf9 :\cf5  \cf10 '#3d5a80'\cf5  \cf9 \};\cf5 \cb1 \
-\cb3                 \cf12 case\cf5  \cf10 'nile'\cf9 :\cf5  \cf12 return\cf5  \cf9 \{\cf5  style\cf9 :\cf5  \cf10 'background: linear-gradient(to bottom, #3A8B9C, #E0C097, #6B2A2D);'\cf9 ,\cf5  textColor\cf9 :\cf5  \cf10 '#FAD74B'\cf5  \cf9 \};\cf5 \cb1 \
-\cb3                 \cf12 case\cf5  \cf10 'solid'\cf9 :\cf5  \cb1 \
-\cb3                     \cf12 const\cf5  solidBg \cf9 =\cf5  randomColor\cf9 ();\cf5 \cb1 \
-\cb3                     \cf12 return\cf5  \cf9 \{\cf5  style\cf9 :\cf5  \cf10 `background-color: \cf9 $\{\cf5 solidBg\cf9 \}\cf10 ;`\cf9 ,\cf5  textColor\cf9 :\cf5  getTextColor\cf9 (\cf5 solidBg\cf9 )\cf5  \cf9 \};\cf5 \cb1 \
-\cb3                 \cf12 case\cf5  \cf10 'gradient'\cf9 :\cf5 \cb1 \
-\cb3                     \cf12 const\cf5  gradBg1 \cf9 =\cf5  randomColor\cf9 ();\cf5 \cb1 \
-\cb3                     \cf12 const\cf5  gradBg2 \cf9 =\cf5  randomColor\cf9 ();\cf5 \cb1 \
-\cb3                     \cf12 return\cf5  \cf9 \{\cf5  style\cf9 :\cf5  \cf10 `background: linear-gradient(135deg, \cf9 $\{\cf5 gradBg1\cf9 \}\cf10 , \cf9 $\{\cf5 gradBg2\cf9 \}\cf10 );`\cf9 ,\cf5  textColor\cf9 :\cf5  getTextColor\cf9 (\cf5 gradBg1\cf9 )\cf5  \cf9 \};\cf5  \cf8 // Check against first color\cf5 \cb1 \
-\cb3                 \cf12 case\cf5  \cf10 'famous_painting'\cf9 :\cf5 \cb1 \
-\cb3                     \cf12 const\cf5  paintings \cf9 =\cf5  \cf9 [\cf5 \cb1 \
-\cb3                         \cf9 \{\cf5  style\cf9 :\cf5  \cf10 'background: linear-gradient(to bottom, #0b1a3a, #f6d17a);'\cf9 ,\cf5  textColor\cf9 :\cf5  \cf10 '#ffffff'\cf5  \cf9 \},\cf5  \cf8 // Starry Night\cf5 \cb1 \
-\cb3                         \cf9 \{\cf5  style\cf9 :\cf5  \cf10 'background: linear-gradient(to bottom right, #a2d2ff, #bde0fe, #fbcfe8);'\cf9 ,\cf5  textColor\cf9 :\cf5  \cf10 '#334155'\cf5  \cf9 \},\cf5  \cf8 // Water Lilies\cf5 \cb1 \
-\cb3                         \cf9 \{\cf5  style\cf9 :\cf5  \cf10 'background: linear-gradient(to top, #e67e22, #f1c40f, #2980b9);'\cf9 ,\cf5  textColor\cf9 :\cf5  \cf10 '#000000'\cf5  \cf9 \}\cf5  \cf8 // The Scream\cf5 \cb1 \
-\cb3                     \cf9 ];\cf5 \cb1 \
-\cb3                     \cf12 return\cf5  paintings\cf9 [\cf14 Math\cf9 .\cf5 floor\cf9 (\cf14 Math\cf9 .\cf5 random\cf9 ()\cf5  \cf9 *\cf5  paintings\cf9 .\cf5 length\cf9 )];\cf5 \cb1 \
-\cb3                 \cf12 case\cf5  \cf10 'default'\cf9 :\cf5 \cb1 \
-\cb3                 \cf12 default\cf9 :\cf5  \cf12 return\cf5  \cf9 \{\cf5  style\cf9 :\cf5  \cf10 'background-color: #ffffff;'\cf9 ,\cf5  textColor\cf9 :\cf5  \cf10 '#334155'\cf5  \cf9 \};\cf5 \cb1 \
-\cb3             \cf9 \}\cf5 \cb1 \
-\cb3         \cf9 \}\cf5 \cb1 \
-\
-\
-\cb3         \cf8 // --- HTML Template Function ---\cf5 \cb1 \
-\
-\cb3         \cf12 function\cf5  getPosterHTML\cf9 (\cf5 data\cf9 )\cf5  \cf9 \{\cf5 \cb1 \
-\cb3             \cf12 const\cf5  isHorizontal \cf9 =\cf5  data\cf9 .\cf5 posterSize \cf9 ===\cf5  \cf10 '16/9'\cf9 ;\cf5 \cb1 \
-\cb3             \cf12 const\cf5  avatarFilter \cf9 =\cf5  getAvatarFilter\cf9 (\cf5 data\cf9 .\cf5 style\cf9 );\cf5 \cb1 \
-\cb3             \cf12 const\cf5  \cf9 \{\cf5  style\cf9 :\cf5  backgroundStyle\cf9 ,\cf5  textColor \cf9 \}\cf5  \cf9 =\cf5  getBackgroundStyle\cf9 (\cf5 data\cf9 .\cf5 background\cf9 );\cf5 \cb1 \
-\
-\cb3             \cf12 const\cf5  layoutClass \cf9 =\cf5  isHorizontal \cb1 \
-\cb3                 \cf9 ?\cf5  \cf10 'flex-row items-center justify-center gap-8'\cf5  \cb1 \
-\cb3                 \cf9 :\cf5  \cf10 'flex-col items-center justify-around gap-4'\cf9 ;\cf5 \cb1 \
-\
-\cb3             \cf12 const\cf5  imageContainerClass \cf9 =\cf5  isHorizontal \cf9 ?\cf5  \cf10 'w-5/12'\cf5  \cf9 :\cf5  \cf10 'w-2/3'\cf9 ;\cf5 \cb1 \
-\cb3             \cf12 const\cf5  textContainerClass \cf9 =\cf5  isHorizontal \cf9 ?\cf5  \cf10 'w-6/12 text-left'\cf5  \cf9 :\cf5  \cf10 'w-full text-center'\cf9 ;\cf5 \cb1 \
-\cb3             \cb1 \
-\cb3             \cf12 const\cf5  imageSizeClass \cf9 =\cf5  data\cf9 .\cf5 avatarRatio \cf9 ===\cf5  \cf10 'square'\cf5  \cf9 ?\cf5  \cf10 'aspect-square'\cf5  \cf9 :\cf5  \cf10 'aspect-[9/16]'\cf9 ;\cf5 \cb1 \
-\cb3             \cb1 \
-\cb3             \cf12 const\cf5  titleSizeClass \cf9 =\cf5  isHorizontal \cf9 ?\cf5  \cf10 'text-6xl'\cf5  \cf9 :\cf5  \cf10 'text-5xl'\cf9 ;\cf5 \cb1 \
-\cb3             \cf12 const\cf5  speakerSizeClass \cf9 =\cf5  isHorizontal \cf9 ?\cf5  \cf10 'text-4xl'\cf5  \cf9 :\cf5  \cf10 'text-3xl'\cf9 ;\cf5 \cb1 \
-\
-\
-\cb3             \cf12 return\cf5  \cf10 `\cf5 \cb1 \
-\pard\pardeftab720\partightenfactor0
-\cf10 \cb3                 <!DOCTYPE html>\cf5 \cb1 \
-\cf10 \cb3                 <html lang="zh-Hant">\cf5 \cb1 \
-\cf10 \cb3                 <head>\cf5 \cb1 \
-\cf10 \cb3                     <meta charset="UTF-8">\cf5 \cb1 \
-\cf10 \cb3                     <meta name="viewport" content="width=device-width, initial-scale=1.0">\cf5 \cb1 \
-\cf10 \cb3                     <title>
-\f1 \'ae\'fc\'b3\'f8
-\f0 </title>\cf5 \cb1 \
-\cf10 \cb3                     <script src="https://cdn.tailwindcss.com"><\\/script>\cf5 \cb1 \
-\cf10 \cb3                     <style>\cf5 \cb1 \
-\cf10 \cb3                         body \{ \cf5 \cb1 \
-\cf10 \cb3                             font-family:'Inter', 'Noto Sans TC', sans-serif; \cf5 \cb1 \
-\cf10 \cb3                             -webkit-print-color-adjust: exact; \cf5 \cb1 \
-\cf10 \cb3                             height: 100vh;\cf5 \cb1 \
-\cf10 \cb3                             margin: 0;\cf5 \cb1 \
-\cf10 \cb3                             color: \cf9 $\{\cf5 textColor\cf9 \}\cf10 ;\cf5 \cb1 \
-\cf10 \cb3                             \cf9 $\{\cf5 backgroundStyle\cf9 \}\cf5 \cb1 \
-\cf10 \cb3                         \}\cf5 \cb1 \
-\cf10 \cb3                     </style>\cf5 \cb1 \
-\cf10 \cb3                 </head>\cf5 \cb1 \
-\cf10 \cb3                 <body class="flex items-center justify-center">\cf5 \cb1 \
-\cf10 \cb3                     <div class="w-full h-full flex \cf9 $\{\cf5 layoutClass\cf9 \}\cf10  p-8">\cf5 \cb1 \
-\cf10 \cb3                         \cf5 \cb1 \
-\cf10 \cb3                         <div class="\cf9 $\{\cf5 imageContainerClass\cf9 \}\cf10 ">\cf5 \cb1 \
-\cf10 \cb3                             <img src="\cf9 $\{\cf5 data\cf9 .\cf5 lecturerImage\cf9 \}\cf10 " alt="
-\f1 \'c1\'bf\'ae\'76\'b7\'d3\'a4\'f9
-\f0 " class="w-full \cf9 $\{\cf5 imageSizeClass\cf9 \}\cf10  object-cover rounded-xl shadow-lg" style="\cf9 $\{\cf5 avatarFilter\cf9 \}\cf10 ">\cf5 \cb1 \
-\cf10 \cb3                         </div>\cf5 \cb1 \
-\
-\cf10 \cb3                         <div class="\cf9 $\{\cf5 textContainerClass\cf9 \}\cf10  flex flex-col justify-center gap-6">\cf5 \cb1 \
-\cf10 \cb3                             <h1 class="\cf9 $\{\cf5 titleSizeClass\cf9 \}\cf10  font-bold leading-tight" style="text-shadow: 1px 1px 3px rgba(0,0,0,0.2);">\cf9 $\{\cf5 data\cf9 .\cf5 eventTitle\cf9 \}\cf10 </h1>\cf5 \cb1 \
-\cf10 \cb3                             \cf5 \cb1 \
-\cf10 \cb3                             <div class="mt-2">\cf5 \cb1 \
-\cf10 \cb3                                 <p class="text-xl opacity-80">
-\f1 \'a5\'44\'c1\'bf\'a4\'48
-\f0 </p>\cf5 \cb1 \
-\cf10 \cb3                                 <p class="\cf9 $\{\cf5 speakerSizeClass\cf9 \}\cf10  font-bold" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.1);">\cf9 $\{\cf5 data\cf9 .\cf5 speaker\cf9 \}\cf10 </p>\cf5 \cb1 \
-\cf10 \cb3                             </div>\cf5 \cb1 \
-\cf10 \cb3                             \cf5 \cb1 \
-\cf10 \cb3                             <div class="text-xl bg-black bg-opacity-10 p-4 rounded-lg backdrop-blur-sm">\cf5 \cb1 \
-\cf10 \cb3                                 <p>\cf9 $\{\cf5 data\cf9 .\cf5 date\cf9 \}\cf10 </p>\cf5 \cb1 \
-\cf10 \cb3                                 <p>\cf9 $\{\cf5 data\cf9 .\cf5 time\cf9 \}\cf10 </p>\cf5 \cb1 \
-\cf10 \cb3                                 <p class="break-words mt-2 font-semibold">\cf9 $\{\cf5 data\cf9 .\cf5 location\cf9 \}\cf10 </p>\cf5 \cb1 \
-\cf10 \cb3                             </div>\cf5 \cb1 \
-\cf10 \cb3                         </div>\cf5 \cb1 \
-\
-\cf10 \cb3                     </div>\cf5 \cb1 \
-\cf10 \cb3                 </body>\cf5 \cb1 \
-\cf10 \cb3                 </html>`\cf9 ;\cf5 \cb1 \
-\pard\pardeftab720\partightenfactor0
-\cf5 \cb3         \cf9 \}\cf5 \cb1 \
-\cb3     \cf6 </\cf2 script\cf6 >\cf5 \cb1 \
-\cf6 \cb3 </\cf2 body\cf6 >\cf5 \cb1 \
-\cf6 \cb3 </\cf2 html\cf6 >\cf5 \cb1 \
-\
-}
+    <!-- ⭐ Favicon 修正 ⭐ -->
+    <!-- 請刪除所有舊的 favicon link 標籤，並使用下面這一行 -->
+    <!-- 您需要先將您的圖檔轉為 Base64 字串，然後貼到 href 引號中的指定位置 -->
+    <link rel="icon" href="data:image/png;base64,在這裡貼上您複製的Base64文字">
+
+    <!-- 引入 Tailwind CSS 和 Google Fonts -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Noto+Sans+TC:wght@400;700&family=Nunito+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        /* 整體頁面背景與字體設定 */
+        body {
+            font-family: 'Inter', 'Noto Sans TC', sans-serif;
+            background: linear-gradient(135deg, #fddde6 0%, #d4eaf7 100%);
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            padding: 2rem 1rem;
+            box-sizing: border-box;
+        }
+
+        /* 生成器主容器 */
+        .generator-container {
+            background-color: rgba(255, 255, 255, 0.9);
+            padding: 2rem;
+            border-radius: 20px;
+            box-shadow: 0 15px 30px rgba(0, 0, 0, 0.15);
+            margin-bottom: 2rem;
+            width: 100%;
+            max-width: 600px;
+            backdrop-filter: blur(10px);
+            border: 1px solid rgba(255, 255, 255, 0.2);
+        }
+        
+        /* 標題樣式 (已更新) */
+        .generator-title {
+            font-size: 2.8rem;
+            font-weight: 700;
+            color: #5e35b1; /* 深紫色 */
+            text-align: center;
+            text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.1);
+            background-color: #f3e5f5; /* 淺紫色背景 */
+            padding: 0.75rem 2rem;
+            border-radius: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            display: inline-block; /* 讓背景包裹文字 */
+            border: 1px solid rgba(94, 53, 177, 0.1);
+        }
+
+        /* 輸入區塊卡片 */
+        .input-card {
+            background-color: rgba(255, 255, 255, 0.8);
+            padding: 1.5rem;
+            margin-bottom: 1rem;
+            border-radius: 15px;
+            border: 1px solid #eee;
+            transition: box-shadow 0.3s ease;
+        }
+        .input-card:focus-within {
+             box-shadow: 0 0 15px rgba(216, 27, 96, 0.2);
+        }
+
+        .input-card label {
+            display: block;
+            margin-bottom: 0.5rem;
+            font-weight: 700;
+            color: #555;
+            font-size: 1rem;
+        }
+
+        .input-card input, .input-card select {
+            width: 100%;
+            padding: 0.75rem;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+        .input-card input:focus, .input-card select:focus {
+            outline: none;
+            border-color: #d81b60;
+        }
+        
+        /* 日期選擇器樣式 */
+        .date-picker-container {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        #date-input {
+            color: #333; /* 確保選中日期後文字可見 */
+        }
+        #date-display {
+            font-weight: bold;
+            color: #d81b60;
+        }
+        
+        /* 檔案上傳按鈕 */
+        .upload-area {
+            display: flex;
+            align-items: center;
+            gap: 1rem;
+        }
+        
+        #lecturer-image-preview {
+            width: 100px;
+            height: 133px;
+            object-fit: cover;
+            border-radius: 8px;
+            border: 2px dashed #ccc;
+            background-color: #f8f8f8;
+        }
+
+        /* 操作按鈕通用樣式 */
+        .action-button {
+            color: white;
+            padding: 1rem 1.5rem;
+            border: none;
+            border-radius: 12px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            font-weight: 700;
+            width: 100%;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+            text-align: center;
+        }
+
+        /* 生成按鈕 */
+        .generate-button {
+            background: linear-gradient(45deg, #d81b60, #f48fb1);
+            box-shadow: 0 4px 15px rgba(216, 27, 96, 0.3);
+        }
+        .generate-button:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(216, 27, 96, 0.4); }
+        
+        /* 列印按鈕 */
+        .print-button {
+            background: linear-gradient(45deg, #42a5f5, #90caf9);
+            box-shadow: 0 4px 15px rgba(66, 165, 245, 0.3);
+        }
+        .print-button:hover { transform: translateY(-2px); box-shadow: 0 6px 20px rgba(66, 165, 245, 0.4); }
+
+
+        /* 海報預覽容器 */
+        #poster-preview-container {
+            margin-top: 1rem;
+            border: 1px solid #DDD;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+            border-radius: 15px;
+            overflow: hidden;
+            width: 100%;
+            max-width: 500px;
+            background-color: #fff;
+            transition: aspect-ratio 0.4s ease, max-width 0.4s ease;
+        }
+
+        #poster-preview-iframe { width: 100%; height: 100%; border: none; }
+    </style>
+</head>
+<body>
+    <div class="generator-container">
+        <div class="w-full text-center mb-8">
+            <h1 class="generator-title">Gloria的海報生成器</h1>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="input-card"><label for="event-title">活動主題：</label><input type="text" id="event-title" placeholder="請輸入活動主題" value=""></div>
+            <div class="input-card"><label for="speaker">講師：</label><input type="text" id="speaker" placeholder="請輸入講師姓名" value=""></div>
+            <div class="input-card">
+                <label for="date-input">日期：</label>
+                <div class="date-picker-container">
+                    <input type="date" id="date-input">
+                    <span id="date-display"></span>
+                </div>
+            </div>
+            <div class="input-card"><label for="time">時間：</label><input type="text" id="time" placeholder="請輸入時間" value=""></div>
+        </div>
+
+        <div class="input-card"><label for="location">實體或線上meet：</label><input type="text" id="location" placeholder="地點或Meet網址" value=""></div>
+        
+        <div class="input-card">
+            <label for="lecturer-image">講師頭像上傳：</label>
+            <div class="upload-area">
+                <input type="file" id="lecturer-image" accept="image/*">
+                <img id="lecturer-image-preview" src="https://placehold.co/300x400/EFEFEF/AAAAAA?text=預覽" alt="講師頭像預覽">
+            </div>
+        </div>
+        
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="input-card">
+                <label for="avatar-ratio">頭像比例：</label>
+                <select id="avatar-ratio">
+                    <option value="portrait">直式 (9:16)</option>
+                    <option value="square">方形 (1:1)</option>
+                </select>
+            </div>
+             <div class="input-card">
+                <label for="poster-size">海報尺寸：</label>
+                <select id="poster-size">
+                    <option value="9/16">直式 (9:16)</option>
+                    <option value="16/9">橫式 (16:9)</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="input-card">
+                <label for="style">頭像風格：</label>
+                <select id="style">
+                    <option value="realistic">無濾鏡 (寫實)</option>
+                    <option value="cartoon">漫畫風格</option>
+                    <option value="illustration">插畫風格</option>
+                    <option value="ghibli">宮崎駿動漫</option>
+                    <option value="3d-doll">3D娃娃</option>
+                    <option value="vangogh">梵谷名畫</option>
+                </select>
+            </div>
+            <div class="input-card">
+                <label for="poster-background">海報背景：</label>
+                <select id="poster-background">
+                    <option value="default">預設 (白底)</option>
+                    <option value="miyazaki">宮崎駿動漫風格</option>
+                    <option value="nile">尼羅河女兒風格</option>
+                    <option value="solid">隨機單色</option>
+                    <option value="gradient">隨機漸層</option>
+                    <option value="famous_painting">世界名畫風格</option>
+                </select>
+            </div>
+        </div>
+
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+            <div class="input-card !p-0"><button class="action-button generate-button" onclick="generatePoster()">✨ 生成海報 ✨</button></div>
+            <div class="input-card !p-0"><button class="action-button print-button" onclick="printPoster()">🖨️ 列印海報</button></div>
+        </div>
+    </div>
+
+    <div id="poster-preview-container">
+        <iframe id="poster-preview-iframe" title="海報預覽"></iframe>
+    </div>
+
+    <script>
+        // --- Event Listeners ---
+        window.onload = function() {
+            updatePosterSize(); // Set initial poster size
+            generatePoster();
+        };
+    
+        document.getElementById('lecturer-image').addEventListener('change', function() {
+            const file = this.files && this.files.length > 0 ? this.files[0] : null;
+            if (file) {
+                const reader = new FileReader();
+                reader.onload = function(e) {
+                    document.getElementById('lecturer-image-preview').src = e.target.result;
+                }
+                reader.readAsDataURL(file);
+            }
+        });
+        
+        document.getElementById('date-input').addEventListener('change', updateDateDisplay);
+        document.getElementById('poster-size').addEventListener('change', updatePosterSize);
+
+        // --- Core Functions ---
+        function updateDateDisplay() {
+            const dateInput = document.getElementById('date-input');
+            const dateDisplay = document.getElementById('date-display');
+            if (dateInput.value) {
+                const dateValue = dateInput.value;
+                const [year, month, day] = dateValue.split('-').map(Number);
+                const date = new Date(Date.UTC(year, month - 1, day));
+                
+                const options = { year: 'numeric', month: 'long', day: 'numeric', weekday: 'long', timeZone: 'UTC' };
+                dateDisplay.textContent = new Intl.DateTimeFormat('zh-Hant-TW', options).format(date);
+            } else {
+                dateDisplay.textContent = '';
+            }
+        }
+        
+        function updatePosterSize() {
+            const size = document.getElementById('poster-size').value;
+            const container = document.getElementById('poster-preview-container');
+            container.style.aspectRatio = size;
+            
+            if (size === '16/9') {
+                container.style.maxWidth = '800px';
+            } else {
+                container.style.maxWidth = '500px';
+            }
+        }
+
+        function generatePoster() {
+            const data = {
+                eventTitle: document.getElementById('event-title').value || '請輸入主題',
+                speaker: document.getElementById('speaker').value || '待定講師',
+                date: document.getElementById('date-display').textContent || '待定日期',
+                time: document.getElementById('time').value || '待定時間',
+                location: document.getElementById('location').value || '待定地點',
+                lecturerImage: document.getElementById('lecturer-image-preview').src,
+                style: document.getElementById('style').value,
+                avatarRatio: document.getElementById('avatar-ratio').value,
+                posterSize: document.getElementById('poster-size').value,
+                background: document.getElementById('poster-background').value
+            };
+
+            const posterHTML = getPosterHTML(data);
+            const iframe = document.getElementById('poster-preview-iframe');
+            iframe.srcdoc = posterHTML;
+        }
+
+        function printPoster() {
+            const iframe = document.getElementById('poster-preview-iframe');
+            if (iframe && iframe.contentWindow) {
+                iframe.contentWindow.focus();
+                iframe.contentWindow.print();
+            } else {
+                alert("無法列印，海報預覽尚未準備好。");
+            }
+        }
+        
+        // --- Helper functions for styles ---
+
+        function getAvatarFilter(style) {
+            switch(style) {
+                case 'cartoon': return 'filter: grayscale(1) brightness(1.2) contrast(1.5);';
+                case 'illustration': return 'filter: sepia(0.5) saturate(1.4) brightness(1.1);';
+                case 'ghibli': return 'filter: saturate(1.2) contrast(1.1) brightness(1.1);';
+                case '3d-doll': return 'filter: saturate(1.5) brightness(1.1);';
+                case 'vangogh': return 'filter: contrast(1.4) saturate(1.8) sepia(0.3) hue-rotate(-10deg);';
+                case 'realistic':
+                default: return 'filter: none;';
+            }
+        }
+        
+        function getBackgroundStyle(background) {
+            const randomColor = () => '#' + Math.floor(Math.random()*16777215).toString(16).padStart(6, '0');
+            const getTextColor = (bgColor) => {
+                const color = (bgColor.charAt(0) === '#') ? bgColor.substring(1, 7) : bgColor;
+                const r = parseInt(color.substring(0, 2), 16);
+                const g = parseInt(color.substring(2, 4), 16);
+                const b = parseInt(color.substring(4, 6), 16);
+                return (((r * 299) + (g * 587) + (b * 114)) / 1000) > 128 ? '#334155' : '#f8fafc';
+            };
+
+            switch(background) {
+                case 'miyazaki': return { style: 'background: linear-gradient(to bottom, #a7d9ed, #f5f0e1);', textColor: '#3d5a80' };
+                case 'nile': return { style: 'background: linear-gradient(to bottom, #3A8B9C, #E0C097, #6B2A2D);', textColor: '#FAD74B' };
+                case 'solid': 
+                    const solidBg = randomColor();
+                    return { style: `background-color: ${solidBg};`, textColor: getTextColor(solidBg) };
+                case 'gradient':
+                    const gradBg1 = randomColor();
+                    const gradBg2 = randomColor();
+                    return { style: `background: linear-gradient(135deg, ${gradBg1}, ${gradBg2});`, textColor: getTextColor(gradBg1) }; // Check against first color
+                case 'famous_painting':
+                    const paintings = [
+                        { style: 'background: linear-gradient(to bottom, #0b1a3a, #f6d17a);', textColor: '#ffffff' }, // Starry Night
+                        { style: 'background: linear-gradient(to bottom right, #a2d2ff, #bde0fe, #fbcfe8);', textColor: '#334155' }, // Water Lilies
+                        { style: 'background: linear-gradient(to top, #e67e22, #f1c40f, #2980b9);', textColor: '#000000' } // The Scream
+                    ];
+                    return paintings[Math.floor(Math.random() * paintings.length)];
+                case 'default':
+                default: return { style: 'background-color: #ffffff;', textColor: '#334155' };
+            }
+        }
+
+
+        // --- HTML Template Function ---
+
+        function getPosterHTML(data) {
+            const isHorizontal = data.posterSize === '16/9';
+            const avatarFilter = getAvatarFilter(data.style);
+            const { style: backgroundStyle, textColor } = getBackgroundStyle(data.background);
+
+            const layoutClass = isHorizontal 
+                ? 'flex-row items-center justify-center gap-8' 
+                : 'flex-col items-center justify-around gap-4';
+
+            const imageContainerClass = isHorizontal ? 'w-5/12' : 'w-2/3';
+            const textContainerClass = isHorizontal ? 'w-6/12 text-left' : 'w-full text-center';
+            
+            const imageSizeClass = data.avatarRatio === 'square' ? 'aspect-square' : 'aspect-[9/16]';
+            
+            const titleSizeClass = isHorizontal ? 'text-6xl' : 'text-5xl';
+            const speakerSizeClass = isHorizontal ? 'text-4xl' : 'text-3xl';
+
+
+            return `
+                <!DOCTYPE html>
+                <html lang="zh-Hant">
+                <head>
+                    <meta charset="UTF-8">
+                    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                    <title>海報</title>
+                    <script src="https://cdn.tailwindcss.com"><\/script>
+                    <style>
+                        body { 
+                            font-family:'Inter', 'Noto Sans TC', sans-serif; 
+                            -webkit-print-color-adjust: exact; 
+                            height: 100vh;
+                            margin: 0;
+                            color: ${textColor};
+                            ${backgroundStyle}
+                        }
+                    </style>
+                </head>
+                <body class="flex items-center justify-center">
+                    <div class="w-full h-full flex ${layoutClass} p-8">
+                        
+                        <div class="${imageContainerClass}">
+                            <img src="${data.lecturerImage}" alt="講師照片" class="w-full ${imageSizeClass} object-cover rounded-xl shadow-lg" style="${avatarFilter}">
+                        </div>
+
+                        <div class="${textContainerClass} flex flex-col justify-center gap-6">
+                            <h1 class="${titleSizeClass} font-bold leading-tight" style="text-shadow: 1px 1px 3px rgba(0,0,0,0.2);">${data.eventTitle}</h1>
+                            
+                            <div class="mt-2">
+                                <p class="text-xl opacity-80">主講人</p>
+                                <p class="${speakerSizeClass} font-bold" style="text-shadow: 1px 1px 2px rgba(0,0,0,0.1);">${data.speaker}</p>
+                            </div>
+                            
+                            <div class="text-xl bg-black bg-opacity-10 p-4 rounded-lg backdrop-blur-sm">
+                                <p>${data.date}</p>
+                                <p>${data.time}</p>
+                                <p class="break-words mt-2 font-semibold">${data.location}</p>
+                            </div>
+                        </div>
+
+                    </div>
+                </body>
+                </html>`;
+        }
+    </script>
+</body>
+</html>
+
